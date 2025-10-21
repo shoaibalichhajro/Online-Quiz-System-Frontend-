@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Quiz System</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Start Screen -->
+  <div class="container" id="start-container">
+    <h1>Welcome to Online Quiz 🎓</h1>
+    <p>Please enter your name to start:</p>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <br>
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Section -->
+  <div class="container hide" id="quiz-container">
+    <h2 id="welcome"></h2>
+    <div id="timer">Time Left: <span id="time">15</span> sec</div>
+    <div id="progress"><div id="progress-bar"></div></div>
+    <div id="question-container">
+      <h3 id="question">Question text</h3>
+      <div id="options"></div>
+    </div>
+    <button id="pause-btn">⏸️ Pause</button>
+    <button id="next-btn">Next</button>
+  </div>
+
+  <!-- Result Section -->
+  <div class="container hide" id="result-container">
+    <h2 id="greet"></h2>
+    <p id="score"></p>
+    <button id="restart-btn">Restart Quiz</button>
+  </div>
+
+  <!-- Link JS -->
+  <script src="script.js"></script>
+</body>
+</html>
